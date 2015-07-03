@@ -546,7 +546,7 @@ function _cmd_search() {
         esac
         local search_term="$*"
         local escaped_search_term=$(_quote_for_applescript_string "$search_term")
-        _fetch_tracks LOOP "(search playlist \"Library\" for \"$escaped_search_term\" only $target)" search_tracks
+        _fetch_tracks LOOP "(search playlist \"ライブラリ\" for \"$escaped_search_term\" only $target)" search_tracks
         echo "Searching for tracks with $desc containing \"$search_term\":"
         _show_tracks "search_tracks" 1
     fi
